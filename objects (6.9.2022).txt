@@ -1,0 +1,17 @@
+
+About objects and its internal representation in Javascript
+
+       Objects in JavaScript is it’s most important data-type and forms the 
+building blocks for modern JavaScript. These objects are quite different 
+from JavaScrip primitive data-types
+Number
+* String
+* Boolean
+* null
+* undefined and symbol 
+
+In the sense that while these primitive data-types all store a single value each (depending on
+ their types).
+
+In objects were decleard inbetween the brackets , key represent the variables ,value represent 
+the number or any other values 
