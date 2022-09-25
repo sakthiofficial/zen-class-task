@@ -1,0 +1,47 @@
+Do the below programs in arrow functions.
+
+a.Print odd numbers in an array
+var mt =[]
+var oddNum = (arr)=>{
+  for(var i=0; i<arr.length; i++){
+    if (arr[i]%2 !== 0){
+      mt.push(arr[i])
+    }
+  }return mt;
+}
+oddNum([1,2,3,4,5]);
+  console.log(mt)
+
+b.Convert all the strings to title caps in a string array
+
+var foo = (a)=>{
+  var mt = []
+mt .push (a.toUpperCase());
+return mt;
+}
+console.log(foo("guvi"));
+
+c.Sum of all numbers in an array
+
+var add = (arr)=>{
+  var sum = 0;
+var res = 0;
+for(var i=0; i<arr.length; i++){
+   sum = res;
+ res = sum + arr[i];
+
+}return res;
+}
+
+e.Return all the palindromes in an array
+
+var foo = (a) => {
+  var res;
+  var res = a.split("");
+  var mt = [];
+  for(var i=a.length-1; i>=0; i--){
+    mt.push(res[i]);
+  }
+  return mt;
+}
+console.log(rev("madam"))

@@ -1,0 +1,101 @@
+1.Do the below programs in anonymous function & IIFE
+
+a.Print odd numbers in an array
+var mt =[]
+var oddNum = function(arr){
+  for(var i=0; i<arr.length; i++){
+    if (arr[i]%2 !== 0){
+      mt.push(arr[i])
+    }
+  }return mt;
+}
+oddNum([1,2,3,4,5]);
+  console.log(mt);
+
+b.Convert all the strings to title caps in a string array
+var foo = function(a){
+  var mt = []
+mt .push (a.toUpperCase());
+return mt;
+}
+console.log(foo("guvi"));
+
+c.Sum of all numbers in an array
+
+
+var add = function (arr){
+  var sum = 0;
+var res = 0;
+for(var i=0; i<arr.length; i++){
+   sum = res;
+ res = sum + arr[i];
+
+}return res;
+}
+
+console.log(add([1,2,3,4,5]));
+
+e.Return all the palindromes in an array
+function rev(a){
+  var res;
+  var res = a.split("");
+  var mt = [];
+  for(var i=a.length-1; i>=0; i--){
+    mt.push(res[i]);
+  }
+  return mt;
+}
+console.log(rev("madam"))
+
+f. Return median of two sorted arrays of the same size.
+var result = function (a,b){
+  var sum =a.length-1;
+  var sum2 = b[0];
+  return (a[sum]+sum2)/2;
+}
+  
+  console.log(result([1,2,3,4],[2,4,5,6]));
+
+g.Remove duplicates from an array
+var a = [1,2,2,3,3,5,6,2,0]
+var count = 1;
+var tot = 0;
+for(var i=0; i<a.length; i++){
+  for(var j=0; j<a.length; j++){
+    if(a[i] === a[j]){
+      tot ++;
+      if(tot>count){
+        var sum =a.splice(j,1);
+         j--;
+      }
+    }
+  }
+  tot = 0
+}
+console.log(a);
+
+
+h. Rotate an array by k times
+
+function rev(a,n){
+
+  var mt = [];
+ var nt = a.splice(0,n);
+  for(var i=n-1; i>=0; i--){
+    mt.push(nt[i]);
+  }
+
+  mt.push(parseInt(a));
+  
+  return mt;
+}
+console.log(rev([1,2,3,4],3));
+});
+
+
+
+
+
+
+
+
